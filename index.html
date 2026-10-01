@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>3D SUV Racing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <!-- LOADING -->
+    <div id="loading">
+        LOADING 3D GAME...
+    </div>
+
+    <!-- HUD -->
+    <div id="hud">
+
+        <div class="hud-box">
+            <div class="hud-title">SPEED</div>
+            <div>
+                <span id="speed">0</span>
+                <span class="unit">KM/H</span>
+            </div>
+        </div>
+
+        <div class="hud-box">
+            <div class="hud-title">TIME</div>
+            <div id="time">00:00</div>
+        </div>
+
+        <div class="nitro-box">
+            <div class="hud-title">NITRO</div>
+
+            <div class="nitro-bar">
+                <div id="nitroFill"></div>
+            </div>
+
+            <div id="nitroText">100%</div>
+        </div>
+
+    </div>
+
+
+    <!-- CRASH MESSAGE -->
+    <div id="raceMessage"></div>
+
+
+    <!-- RESTART -->
+    <button id="restartBtn">
+        🔄 RESTART GAME
+    </button>
+
+
+    <!-- MOBILE CONTROLS -->
+    <div id="mobileControls">
+
+        <button
+            id="leftBtn"
+            class="control-btn">
+            ◀
+        </button>
+
+        <button
+            id="brakeBtn"
+            class="control-btn brake">
+            ▼
+        </button>
+
+        <button
+            id="rightBtn"
+            class="control-btn">
+            ▶
+        </button>
+
+        <button
+            id="nitroBtn"
+            class="control-btn nitro">
+            NITRO
+        </button>
+
+    </div>
+
+
+    <!-- DESKTOP HELP -->
+    <div id="help">
+        W / ↑ = ACCELERATE &nbsp;&nbsp;
+        A / ← = LEFT &nbsp;&nbsp;
+        D / → = RIGHT &nbsp;&nbsp;
+        S / ↓ = BRAKE &nbsp;&nbsp;
+        SPACE = NITRO
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
